@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_24dp"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_fissures"
+            android:icon="@drawable/ic_relics_24dp"
+            android:title="@string/title_fissures" />
+        <item
+            android:id="@+id/nav_invasions"
+            android:icon="@drawable/ic_invasion_24dp"
+            android:title="@string/title_invasions" />
+        <item
+            android:id="@+id/nav_sortie"
+            android:icon="@drawable/ic_sortie_24dp"
+            android:title="@string/title_sortie" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_event_24dp"
+            android:title="@string/title_events" />
+    </group>
+
+    <item android:title="Arsenal">
+        <menu>
+            <item
+                android:id="@+id/nav_arsenal"
+                android:icon="@drawable/ic_arsenal_24dp"
+                android:title="@string/menu_arsenal" />
+            <item
+                android:id="@+id/nav_warframes"
+                android:icon="@drawable/ic_warframe_24dp"
+                android:title="@string/title_warframes" />
+            <item
+                android:id="@+id/nav_weapons"
+                android:icon="@drawable/ic_weapon_24dp"
+                android:title="@string/title_weapons" />
+        </menu>
+    </item>
+
+    <item android:title="Trading &amp; Economy">
+        <menu>
+            <item
+                android:id="@+id/nav_market"
+                android:icon="@drawable/ic_market_24dp"
+                android:title="@string/title_market" />
+            <item
+                android:id="@+id/nav_rivens"
+                android:icon="@drawable/ic_riven_24dp"
+                android:title="@string/title_rivens" />
+        </menu>
+    </item>
+
+    <item android:title="Planning &amp; Management">
+        <menu>
+            <item
+                android:id="@+id/nav_builds"
+                android:icon="@drawable/ic_builds_24dp"
+                android:title="@string/title_builds" />
+            <item
+                android:id="@+id/nav_resources"
+                android:icon="@drawable/ic_resources_24dp"
+                android:title="@string/title_resources" />
+            <item
+                android:id="@+id/nav_foundry"
+                android:icon="@drawable/ic_foundry_24dp"
+                android:title="@string/title_foundry" />
+            <item
+                android:id="@+id/nav_clan"
+                android:icon="@drawable/ic_clan_24dp"
+                android:title="@string/title_clan" />
+        </menu>
+    </item>
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_24dp"
+                android:title="@string/title_settings" />
+            <item
+                android:id="@+id/nav_themes"
+                android:icon="@drawable/ic_theme_24dp"
+                android:title="@string/title_themes" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_24dp"
+                android:title="@string/title_about" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,121 @@
+<resources>
+    <!-- App info -->
+    <string name="app_name">Warframe Companion</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Warframe Companion</string>
+    <string name="nav_header_subtitle">Stay Updated, Tenno</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="fab_content_description">Action button</string>
+
+    <!-- Menu strings -->
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_arsenal">Arsenal</string>
+    <string name="menu_missions">Missions</string>
+    <string name="menu_relics">Relics</string>
+    <string name="menu_progression">Progression</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Navigation titles -->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_world_state">World State</string>
+    <string name="title_codex">Codex</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- World state section titles -->
+    <string name="title_alerts">Alerts</string>
+    <string name="title_invasions">Invasions</string>
+    <string name="title_fissures">Void Fissures</string>
+    <string name="title_sortie">Sortie</string>
+    <string name="title_events">Events</string>
+    <string name="title_nightwave">Nightwave</string>
+
+    <!-- Codex section titles -->
+    <string name="title_warframes">Warframes</string>
+    <string name="title_weapons">Weapons</string>
+    <string name="title_relics">Relics</string>
+    <string name="title_companions">Companions</string>
+
+    <!-- Profile section titles -->
+    <string name="title_settings">Settings</string>
+    <string name="title_themes">Themes</string>
+    <string name="title_about">About</string>
+
+    <!-- Dashboard items -->
+    <string name="next_alert">Next Alert</string>
+    <string name="sortie_status">Sortie Status</string>
+    <string name="active_invasions">Active Invasions</string>
+    <string name="fissure_missions">Fissure Missions</string>
+
+    <!-- Theme names -->
+    <string name="theme_default">Default</string>
+    <string name="theme_rhino_prime">Rhino Prime</string>
+    <string name="theme_excalibur_umbra">Excalibur Umbra</string>
+    <string name="theme_wisp">Wisp</string>
+    <string name="theme_mesa_prime">Mesa Prime</string>
+    <string name="theme_saryn_prime">Saryn Prime</string>
+    <string name="theme_nova_prime">Nova Prime</string>
+    <string name="theme_frost_prime">Frost Prime</string>
+
+    <!-- Dialog strings -->
+    <string name="dialog_select_theme">Select Warframe Theme</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Navigation menu strings -->
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_transform">Transform</string>
+    
+    <!-- New feature strings -->
+    <string name="title_market">Market</string>
+    <string name="title_builds">Builds</string>
+    <string name="title_resources">Resources</string>
+    <string name="title_foundry">Foundry</string>
+    <string name="title_clan">Clan</string>
+    <string name="title_rivens">Rivens</string>
+    
+    <!-- Market strings -->
+    <string name="market_search_hint">Search items...</string>
+    <string name="price_alerts">Price Alerts</string>
+    <string name="trending_items">Trending</string>
+    <string name="best_prices">Best Prices</string>
+    
+    <!-- Build strings -->
+    <string name="new_build">New Build</string>
+    <string name="build_calculator">Calculator</string>
+    <string name="mod_library">Mod Library</string>
+    <string name="damage_stats">Damage Stats</string>
+    <string name="warframe_stats">Warframe Stats</string>
+    
+    <!-- Resource strings -->
+    <string name="resource_inventory">Inventory</string>
+    <string name="crafting_projects">Projects</string>
+    <string name="farming_routes">Farming</string>
+    <string name="optimize_resources">Optimize</string>
+    
+    <!-- Foundry strings -->
+    <string name="foundry_active">Active</string>
+    <string name="foundry_completed">Completed</string>
+    <string name="foundry_queue">Queue</string>
+    
+    <!-- General strings -->
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="refresh">Refresh</string>
+    <string name="loading">Loading...</string>
+    <string name="error_loading">Error loading data</string>
+
+    <!-- Additional strings -->
+    <string name="lorem_ipsum_title">Lorem Ipsum</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+                since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                type specimen book
+            </string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+                item
+            </string>
+</resources>

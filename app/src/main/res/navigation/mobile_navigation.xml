@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.warframeapp20.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_fissures"
+        android:name="com.example.warframeapp20.ui.fissures.FissuresFragment"
+        android:label="@string/title_fissures"
+        tools:layout="@layout/fragment_fissures" />
+
+    <fragment
+        android:id="@+id/nav_invasions"
+        android:name="com.example.warframeapp20.ui.invasions.InvasionsFragment"
+        android:label="@string/title_invasions"
+        tools:layout="@layout/fragment_invasions" />
+
+    <fragment
+        android:id="@+id/nav_sortie"
+        android:name="com.example.warframeapp20.ui.sortie.SortieFragment"
+        android:label="@string/title_sortie"
+        tools:layout="@layout/fragment_sortie" />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.example.warframeapp20.ui.events.EventsFragment"
+        android:label="@string/title_events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/nav_arsenal"
+        android:name="com.example.warframeapp20.ui.arsenal.ArsenalFragment"
+        android:label="@string/menu_arsenal"
+        tools:layout="@layout/fragment_arsenal" />
+
+    <fragment
+        android:id="@+id/nav_warframes"
+        android:name="com.example.warframeapp20.ui.warframes.WarframesFragment"
+        android:label="@string/title_warframes"
+        tools:layout="@layout/fragment_warframes" />
+
+    <fragment
+        android:id="@+id/nav_weapons"
+        android:name="com.example.warframeapp20.ui.weapons.WeaponsFragment"
+        android:label="@string/title_weapons"
+        tools:layout="@layout/fragment_weapons" />
+
+    <fragment
+        android:id="@+id/nav_themes"
+        android:name="com.example.warframeapp20.ui.theme.ThemeFragment"
+        android:label="@string/title_themes"
+        tools:layout="@layout/fragment_themes" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.warframeapp20.ui.about.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_reflow"
+        android:name="com.example.warframeapp20.ui.reflow.ReflowFragment"
+        android:label="@string/menu_reflow"
+        tools:layout="@layout/fragment_reflow" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.warframeapp20.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_market"
+        android:name="com.example.warframeapp20.ui.market.MarketFragment"
+        android:label="@string/title_market"
+        tools:layout="@layout/fragment_market" />
+
+    <fragment
+        android:id="@+id/nav_builds"
+        android:name="com.example.warframeapp20.ui.builds.BuildsFragment"
+        android:label="@string/title_builds"
+        tools:layout="@layout/fragment_builds" />
+
+    <fragment
+        android:id="@+id/nav_resources"
+        android:name="com.example.warframeapp20.ui.resources.ResourcesFragment"
+        android:label="@string/title_resources"
+        tools:layout="@layout/fragment_resources" />
+
+    <fragment
+        android:id="@+id/nav_foundry"
+        android:name="com.example.warframeapp20.ui.foundry.FoundryFragment"
+        android:label="@string/title_foundry"
+        tools:layout="@layout/fragment_foundry" />
+
+    <fragment
+        android:id="@+id/nav_clan"
+        android:name="com.example.warframeapp20.ui.clan.ClanFragment"
+        android:label="@string/title_clan"
+        tools:layout="@layout/fragment_clan" />
+
+    <fragment
+        android:id="@+id/nav_rivens"
+        android:name="com.example.warframeapp20.ui.rivens.RivensFragment"
+        android:label="@string/title_rivens"
+        tools:layout="@layout/fragment_rivens" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.warframeapp20.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

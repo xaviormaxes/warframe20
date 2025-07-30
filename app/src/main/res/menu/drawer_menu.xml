@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_24dp"
+            android:title="Dashboard" />
+
+        <item android:title="World State">
+            <menu>
+                <item
+                    android:id="@+id/nav_alerts"
+                    android:icon="@drawable/ic_alert_24dp"
+                    android:title="Alerts" />
+                <item
+                    android:id="@+id/nav_invasions"
+                    android:icon="@drawable/ic_invasion_24dp"
+                    android:title="Invasions" />
+                <item
+                    android:id="@+id/nav_fissures"
+                    android:icon="@drawable/ic_fissure_24dp"
+                    android:title="Void Fissures" />
+                <item
+                    android:id="@+id/nav_sortie"
+                    android:icon="@drawable/ic_sortie_24dp"
+                    android:title="Sortie" />
+                <item
+                    android:id="@+id/nav_events"
+                    android:icon="@drawable/ic_event_24dp"
+                    android:title="Events" />
+                <item
+                    android:id="@+id/nav_nightwave"
+                    android:icon="@drawable/ic_nightwave_24dp"
+                    android:title="Nightwave" />
+            </menu>
+        </item>
+
+        <item android:title="Resources">
+            <menu>
+                <item
+                    android:id="@+id/nav_relics"
+                    android:icon="@drawable/ic_relics_24dp"
+                    android:title="Relics" />
+                <item
+                    android:id="@+id/nav_warframes"
+                    android:icon="@drawable/ic_warframe_24dp"
+                    android:title="Warframes" />
+                <item
+                    android:id="@+id/nav_weapons"
+                    android:icon="@drawable/ic_weapon_24dp"
+                    android:title="Weapons" />
+                <item
+                    android:id="@+id/nav_companions"
+                    android:icon="@drawable/ic_companion_24dp"
+                    android:title="Companions" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="App">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_24dp"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_themes"
+                android:icon="@drawable/ic_theme_24dp"
+                android:title="Themes" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_24dp"
+                android:title="About" />
+        </menu>
+    </item>
+</menu>
