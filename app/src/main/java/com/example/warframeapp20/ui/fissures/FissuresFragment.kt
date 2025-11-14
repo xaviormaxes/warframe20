@@ -46,14 +46,9 @@ class FissuresFragment : Fragment() {
         viewModel.fissures.observe(viewLifecycleOwner) { fissures ->
             fissureAdapter.updateData(fissures)
         }
-        
+
         viewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
             binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
-        }
-        
-        // Load fissures when fragment is created
-        lifecycleScope.launch {
-            viewModel.loadFissures()
         }
     }
 

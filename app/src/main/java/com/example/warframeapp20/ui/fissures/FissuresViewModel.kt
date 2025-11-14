@@ -9,17 +9,28 @@ import com.example.warframeapp20.data.WorldStateService
 import kotlinx.coroutines.launch
 
 class FissuresViewModel : ViewModel() {
-    
+
     private val worldStateService = WorldStateService()
-    
+
     private val _fissures = MutableLiveData<List<Fissure>>()
     val fissures: LiveData<List<Fissure>> = _fissures
-    
+
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
-    
-    suspend fun loadFissures() {
+
+    private var dataLoaded = false
+
+    init {
+        // Load data once when ViewModel is created
+        loadFissures()
+    }
+
+    fun loadFissures() {
+        // Prevent duplicate loads unless explicitly refreshed
+        if (dataLoaded && _fissures.value != null) return
+
         _isLoading.value = true
+        dataLoaded = true
         viewModelScope.launch {
             try {
                 val fissureList = worldStateService.getFissures()
@@ -30,5 +41,10 @@ class FissuresViewModel : ViewModel() {
                 _isLoading.value = false
             }
         }
+    }
+
+    fun refresh() {
+        dataLoaded = false
+        loadFissures()
     }
 }

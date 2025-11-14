@@ -48,8 +48,6 @@ class SortieFragment : Fragment() {
                 missionAdapter.updateData(it.missions)
             }
         }
-        
-        viewModel.loadSortie()
     }
 
     override fun onDestroyView() {

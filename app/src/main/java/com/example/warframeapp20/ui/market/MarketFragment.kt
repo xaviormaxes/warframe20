@@ -122,10 +122,8 @@ class MarketFragment : Fragment() {
         dialog.show(parentFragmentManager, "item_details")
     }
 
-    override fun onResume() {
-        super.onResume()
-        viewModel.refreshData()
-    }
+    // Removed onResume() to prevent duplicate data loading
+    // The ViewModel loads data in its init block, which is sufficient
 
     override fun onDestroyView() {
         super.onDestroyView()

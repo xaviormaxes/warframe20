@@ -44,8 +44,6 @@ class EventsFragment : Fragment() {
         viewModel.events.observe(viewLifecycleOwner) { events ->
             eventAdapter.updateData(events)
         }
-        
-        viewModel.loadEvents()
     }
 
     override fun onDestroyView() {
