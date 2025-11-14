@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Default Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Default Warframe Theme Colors -->
+    <color name="warframe_blue">#00D4FF</color>
+    <color name="warframe_blue_dark">#0099CC</color>
+    <color name="warframe_energy">#00D4FF</color>
+    <color name="warframe_energy_bright">#66E0FF</color>
+    <color name="warframe_background">#0F0F23</color>
+    <color name="warframe_surface">#1A1A2E</color>
+    <color name="warframe_card">#16213E</color>
+    <color name="warframe_text">#FFFFFF</color>
+    <color name="warframe_text_secondary">#B3FFFFFF</color>
+    <color name="warframe_error">#FF6B6B</color>
+
+    <!-- Rhino Prime Theme Colors -->
+    <color name="rhino_primary">#D4AF37</color>
+    <color name="rhino_primary_dark">#B8860B</color>
+    <color name="rhino_accent">#CD853F</color>
+    <color name="rhino_accent_bright">#DEB887</color>
+    <color name="rhino_background">#1A1611</color>
+    <color name="rhino_surface">#2D2419</color>
+
+    <!-- Excalibur Umbra Theme Colors -->
+    <color name="umbra_primary">#8A2BE2</color>
+    <color name="umbra_primary_dark">#4B0082</color>
+    <color name="umbra_accent">#FF6347</color>
+    <color name="umbra_accent_bright">#FFA07A</color>
+    <color name="umbra_background">#0F0A1A</color>
+    <color name="umbra_surface">#1A0F2E</color>
+
+    <!-- Wisp Theme Colors -->
+    <color name="wisp_primary">#FF1493</color>
+    <color name="wisp_primary_dark">#C71585</color>
+    <color name="wisp_accent">#FFB6C1</color>
+    <color name="wisp_accent_bright">#FFC0CB</color>
+    <color name="wisp_background">#1A0F1A</color>
+    <color name="wisp_surface">#2E1A2E</color>
+
+    <!-- Mesa Prime Theme Colors -->
+    <color name="mesa_primary">#FF4500</color>
+    <color name="mesa_primary_dark">#DC143C</color>
+    <color name="mesa_accent">#FFD700</color>
+    <color name="mesa_accent_bright">#FFFF00</color>
+    <color name="mesa_background">#1A0F0A</color>
+    <color name="mesa_surface">#2E1A0F</color>
+
+    <!-- Saryn Prime Theme Colors -->
+    <color name="saryn_primary">#32CD32</color>
+    <color name="saryn_primary_dark">#228B22</color>
+    <color name="saryn_accent">#98FB98</color>
+    <color name="saryn_accent_bright">#90EE90</color>
+    <color name="saryn_background">#0A1A0A</color>
+    <color name="saryn_surface">#0F2E0F</color>
+
+    <!-- Nova Prime Theme Colors -->
+    <color name="nova_primary">#4169E1</color>
+    <color name="nova_primary_dark">#191970</color>
+    <color name="nova_accent">#87CEEB</color>
+    <color name="nova_accent_bright">#B0E0E6</color>
+    <color name="nova_background">#0A0F1A</color>
+    <color name="nova_surface">#0F1A2E</color>
+
+    <!-- Frost Prime Theme Colors -->
+    <color name="frost_primary">#00BFFF</color>
+    <color name="frost_primary_dark">#1E90FF</color>
+    <color name="frost_accent">#B0E0E6</color>
+    <color name="frost_accent_bright">#E0F6FF</color>
+    <color name="frost_background">#0A1A1A</color>
+    <color name="frost_surface">#0F2E2E</color>
+
+    <!-- Fissure Era Colors -->
+    <color name="lith">#3498DB</color>
+    <color name="meso">#2ECC71</color>
+    <color name="neo">#F39C12</color>
+    <color name="axi">#E74C3C</color>
+    <color name="requiem">#9B59B6</color>
+
+    <!-- Additional UI Colors -->
+    <color name="primary">@color/warframe_blue</color>
+    <color name="success">#2ECC71</color>
+    <color name="textSecondary">@color/warframe_text_secondary</color>  
+    <color name="accent">@color/warframe_energy</color>
+    <color name="error">@color/warframe_error</color>
+</resources>
