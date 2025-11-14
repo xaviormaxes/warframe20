@@ -44,12 +44,10 @@ class InvasionsFragment : Fragment() {
         viewModel.invasions.observe(viewLifecycleOwner) { invasions ->
             invasionAdapter.updateData(invasions)
         }
-        
+
         viewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
             binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
         }
-        
-        viewModel.loadInvasions()
     }
 
     override fun onDestroyView() {

@@ -46,8 +46,6 @@ class WeaponsFragment : Fragment() {
         viewModel.weapons.observe(viewLifecycleOwner) { weapons ->
             weaponAdapter.updateWeapons(weapons)
         }
-        
-        viewModel.loadWeapons()
     }
 
     override fun onDestroyView() {

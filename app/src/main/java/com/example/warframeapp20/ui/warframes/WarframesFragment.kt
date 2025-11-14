@@ -46,9 +46,6 @@ class WarframesFragment : Fragment() {
         viewModel.warframes.observe(viewLifecycleOwner) { warframes ->
             warframeAdapter.updateWarframes(warframes)
         }
-        
-        // Load warframes when fragment is created
-        viewModel.loadWarframes()
     }
 
     override fun onDestroyView() {

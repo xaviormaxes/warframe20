@@ -9,13 +9,24 @@ import com.example.warframeapp20.data.WorldStateService
 import kotlinx.coroutines.launch
 
 class SortieViewModel : ViewModel() {
-    
+
     private val worldStateService = WorldStateService()
-    
+
     private val _sortie = MutableLiveData<Sortie?>()
     val sortie: LiveData<Sortie?> = _sortie
-    
+
+    private var dataLoaded = false
+
+    init {
+        // Load data once when ViewModel is created
+        loadSortie()
+    }
+
     fun loadSortie() {
+        // Prevent duplicate loads unless explicitly refreshed
+        if (dataLoaded && _sortie.value != null) return
+
+        dataLoaded = true
         viewModelScope.launch {
             try {
                 val sortieData = worldStateService.getSortie()
@@ -24,5 +35,10 @@ class SortieViewModel : ViewModel() {
                 _sortie.value = null
             }
         }
+    }
+
+    fun refresh() {
+        dataLoaded = false
+        loadSortie()
     }
 }

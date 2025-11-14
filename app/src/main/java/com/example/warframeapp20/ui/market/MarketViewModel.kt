@@ -29,10 +29,16 @@ class MarketViewModel : ViewModel() {
     private val _error = MutableLiveData<String?>()
     val error: LiveData<String?> = _error
 
+    private var dataLoaded = false
+
     init {
-        loadPopularItems()
-        loadTrendingItems()
-        loadPriceAlerts()
+        // Load data once when ViewModel is created
+        if (!dataLoaded) {
+            loadPopularItems()
+            loadTrendingItems()
+            loadPriceAlerts()
+            dataLoaded = true
+        }
     }
 
     fun searchItems(query: String) {
