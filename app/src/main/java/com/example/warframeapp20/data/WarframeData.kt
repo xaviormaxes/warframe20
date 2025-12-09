@@ -14,7 +14,8 @@ data class Warframe(
     val abilities: List<Ability>,
     @DrawableRes val imageRes: Int = R.drawable.ic_warframe_24dp,
     val isPrime: Boolean = false,
-    val mastery: Int = 0
+    val mastery: Int = 0,
+    val origin: ContentOrigin = ContentOrigin.STANDARD
 )
 
 data class Ability(
@@ -37,7 +38,8 @@ data class Weapon(
     val reload: Float,
     val mastery: Int,
     @DrawableRes val imageRes: Int = R.drawable.ic_weapon_24dp,
-    val isPrime: Boolean = false
+    val isPrime: Boolean = false,
+    val origin: ContentOrigin = ContentOrigin.STANDARD
 )
 
 enum class WeaponType {
@@ -59,6 +61,17 @@ enum class CompanionType {
     SENTINEL, KUBROW, KAVAT, MOA, HOUND, PREDASITE, VULPAPHYLA
 }
 
+enum class ContentOrigin {
+    STANDARD,           // Base game content
+    CETUS,              // Plains of Eidolon (Zaws, Ostron items)
+    FORTUNA,            // Orb Vallis (Kitguns, Solaris items)
+    CAMBION_DRIFT,      // Deimos (Infested weapons, Entrati items)
+    DUVIRI,             // Duviri Paradox content
+    ZARIMAN,            // Angels of the Zariman content
+    SANCTUM_ANATOMICA,  // Sanctum Anatomica content
+    HOLLVANIA_1999      // 1999 update content (Hollvania, Scaldra)
+}
+
 data class Mod(
     val name: String,
     val description: String,
@@ -66,7 +79,8 @@ data class Mod(
     val rarity: ModRarity,
     val maxRank: Int,
     val polarity: Polarity,
-    @DrawableRes val imageRes: Int = R.drawable.ic_settings_24dp
+    @DrawableRes val imageRes: Int = R.drawable.ic_settings_24dp,
+    val origin: ContentOrigin = ContentOrigin.STANDARD
 )
 
 enum class ModType {
@@ -854,6 +868,87 @@ object WarframeRepository {
                 Ability("Reckoning", "Lift and damage enemies", 100)
             ),
             mastery = 0
+        ),
+        // Warframe 1999 Protoframes (Hollvania)
+        Warframe(
+            "Arthur (Excalibur Proto)",
+            "Arthur Nightingale, the original Excalibur. A master swordsman from 1999 Hollvania.",
+            health = 110,
+            shield = 110,
+            armor = 250,
+            energy = 100,
+            abilities = listOf(
+                Ability("Slash Dash", "Dash forward, slashing enemies", 25),
+                Ability("Radial Blind", "Emit a blinding flash", 50),
+                Ability("Radial Javelin", "Launch javelins in all directions", 75),
+                Ability("Exalted Blade", "Summon an ethereal sword", 25)
+            ),
+            mastery = 0,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Warframe(
+            "Amir (Nyx Proto)",
+            "Amir Beckett, the original Nyx. A master of mind control from 1999 Hollvania.",
+            health = 90,
+            shield = 125,
+            armor = 100,
+            energy = 150,
+            abilities = listOf(
+                Ability("Mind Control", "Control an enemy's mind", 25),
+                Ability("Psychic Bolts", "Launch psychic projectiles", 50),
+                Ability("Chaos", "Confuse all nearby enemies", 50),
+                Ability("Absorb", "Absorb all damage and release it", 100)
+            ),
+            mastery = 0,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Warframe(
+            "Eleanor (Mag Proto)",
+            "Eleanor Nightingale, the original Mag. Manipulates magnetic forces in 1999.",
+            health = 85,
+            shield = 165,
+            armor = 75,
+            energy = 100,
+            abilities = listOf(
+                Ability("Pull", "Yank enemies towards you", 25),
+                Ability("Magnetize", "Create a magnetic field", 50),
+                Ability("Polarize", "Strip enemy armor and shields", 75),
+                Ability("Crush", "Compress enemies with magnetic force", 100)
+            ),
+            mastery = 0,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Warframe(
+            "Lettie (Volt Proto)",
+            "Lettie Garcia, the original Volt. Wields electricity in 1999 Hollvania.",
+            health = 110,
+            shield = 160,
+            armor = 25,
+            energy = 100,
+            abilities = listOf(
+                Ability("Shock", "Launch an electric projectile", 25),
+                Ability("Speed", "Increase movement and attack speed", 50),
+                Ability("Electric Shield", "Create a protective barrier", 75),
+                Ability("Discharge", "Emit electricity in all directions", 100)
+            ),
+            mastery = 0,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Warframe(
+            "Quincy (Trinity Proto)",
+            "Quincy Isaacs, the original Trinity. The healer of 1999 Hollvania.",
+            health = 110,
+            shield = 110,
+            armor = 25,
+            energy = 160,
+            abilities = listOf(
+                Ability("Well of Life", "Mark an enemy as a health fountain", 25),
+                Ability("Energy Vampire", "Drain energy from an enemy", 50),
+                Ability("Link", "Link to enemies to share damage", 75),
+                Ability("Blessing", "Restore health and shields to allies", 100)
+            ),
+            mastery = 0,
+            origin = ContentOrigin.HOLLVANIA_1999
         )
     )
 
@@ -1355,6 +1450,348 @@ object WarframeRepository {
             magazine = 0,
             reload = 0.0f,
             mastery = 8
+        ),
+        // Cetus/Plains of Eidolon Weapons (Zaws)
+        Weapon(
+            "Zaw: Plague Kripath",
+            WeaponType.MELEE,
+            damage = 208,
+            critChance = 0.24f,
+            critMultiplier = 2.4f,
+            statusChance = 0.28f,
+            fireRate = 1.0f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 3,
+            origin = ContentOrigin.CETUS
+        ),
+        Weapon(
+            "Zaw: Plague Keewar",
+            WeaponType.MELEE,
+            damage = 230,
+            critChance = 0.26f,
+            critMultiplier = 2.6f,
+            statusChance = 0.24f,
+            fireRate = 0.917f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 3,
+            origin = ContentOrigin.CETUS
+        ),
+        Weapon(
+            "Zaw: Dokrahm",
+            WeaponType.MELEE,
+            damage = 265,
+            critChance = 0.28f,
+            critMultiplier = 2.8f,
+            statusChance = 0.20f,
+            fireRate = 0.917f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 5,
+            origin = ContentOrigin.CETUS
+        ),
+        Weapon(
+            "Zaw: Sepfahn",
+            WeaponType.MELEE,
+            damage = 195,
+            critChance = 0.30f,
+            critMultiplier = 3.0f,
+            statusChance = 0.14f,
+            fireRate = 1.0f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 5,
+            origin = ContentOrigin.CETUS
+        ),
+        Weapon(
+            "Zaw: Cyath",
+            WeaponType.MELEE,
+            damage = 160,
+            critChance = 0.22f,
+            critMultiplier = 2.4f,
+            statusChance = 0.26f,
+            fireRate = 1.08f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 4,
+            origin = ContentOrigin.CETUS
+        ),
+        // Fortuna/Orb Vallis Weapons (Kitguns)
+        Weapon(
+            "Kitgun: Rattleguts",
+            WeaponType.SECONDARY,
+            damage = 28,
+            critChance = 0.23f,
+            critMultiplier = 2.1f,
+            statusChance = 0.27f,
+            fireRate = 16.67f,
+            accuracy = 100f,
+            magazine = 72,
+            reload = 1.8f,
+            mastery = 10,
+            origin = ContentOrigin.FORTUNA
+        ),
+        Weapon(
+            "Kitgun: Catchmoon",
+            WeaponType.SECONDARY,
+            damage = 180,
+            critChance = 0.20f,
+            critMultiplier = 2.0f,
+            statusChance = 0.34f,
+            fireRate = 1.33f,
+            accuracy = 100f,
+            magazine = 16,
+            reload = 2.0f,
+            mastery = 10,
+            origin = ContentOrigin.FORTUNA
+        ),
+        Weapon(
+            "Kitgun: Tombfinger",
+            WeaponType.SECONDARY,
+            damage = 160,
+            critChance = 0.26f,
+            critMultiplier = 2.6f,
+            statusChance = 0.18f,
+            fireRate = 2.0f,
+            accuracy = 100f,
+            magazine = 20,
+            reload = 1.6f,
+            mastery = 10,
+            origin = ContentOrigin.FORTUNA
+        ),
+        Weapon(
+            "Kitgun: Gaze",
+            WeaponType.SECONDARY,
+            damage = 48,
+            critChance = 0.18f,
+            critMultiplier = 1.8f,
+            statusChance = 0.36f,
+            fireRate = 8.0f,
+            accuracy = 100f,
+            magazine = 60,
+            reload = 2.2f,
+            mastery = 10,
+            origin = ContentOrigin.FORTUNA
+        ),
+        Weapon(
+            "Kitgun: Vermisplicer",
+            WeaponType.SECONDARY,
+            damage = 32,
+            critChance = 0.24f,
+            critMultiplier = 2.2f,
+            statusChance = 0.30f,
+            fireRate = 4.0f,
+            accuracy = 100f,
+            magazine = 51,
+            reload = 1.6f,
+            mastery = 14,
+            origin = ContentOrigin.FORTUNA
+        ),
+        // Cambion Drift/Deimos Weapons (Infested)
+        Weapon(
+            "Sepulcrum",
+            WeaponType.SECONDARY,
+            damage = 90,
+            critChance = 0.25f,
+            critMultiplier = 2.5f,
+            statusChance = 0.29f,
+            fireRate = 3.33f,
+            accuracy = 100f,
+            magazine = 60,
+            reload = 2.0f,
+            mastery = 13,
+            origin = ContentOrigin.CAMBION_DRIFT
+        ),
+        Weapon(
+            "Pulmonар",
+            WeaponType.PRIMARY,
+            damage = 52,
+            critChance = 0.30f,
+            critMultiplier = 2.8f,
+            statusChance = 0.18f,
+            fireRate = 9.0f,
+            accuracy = 100f,
+            magazine = 120,
+            reload = 2.2f,
+            mastery = 14,
+            origin = ContentOrigin.CAMBION_DRIFT
+        ),
+        Weapon(
+            "Vitrica",
+            WeaponType.MELEE,
+            damage = 250,
+            critChance = 0.22f,
+            critMultiplier = 2.2f,
+            statusChance = 0.30f,
+            fireRate = 1.0f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 8,
+            origin = ContentOrigin.CAMBION_DRIFT
+        ),
+        Weapon(
+            "Keratinos",
+            WeaponType.MELEE,
+            damage = 280,
+            critChance = 0.26f,
+            critMultiplier = 2.4f,
+            statusChance = 0.28f,
+            fireRate = 0.917f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 8,
+            origin = ContentOrigin.CAMBION_DRIFT
+        ),
+        Weapon(
+            "Quassus",
+            WeaponType.MELEE,
+            damage = 180,
+            critChance = 0.24f,
+            critMultiplier = 2.6f,
+            statusChance = 0.26f,
+            fireRate = 1.0f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 14,
+            origin = ContentOrigin.CAMBION_DRIFT
+        ),
+        // Zariman Weapons
+        Weapon(
+            "Phenmor",
+            WeaponType.PRIMARY,
+            damage = 44,
+            critChance = 0.22f,
+            critMultiplier = 2.2f,
+            statusChance = 0.26f,
+            fireRate = 12.0f,
+            accuracy = 100f,
+            magazine = 39,
+            reload = 2.0f,
+            mastery = 14,
+            origin = ContentOrigin.ZARIMAN
+        ),
+        Weapon(
+            "Felarx",
+            WeaponType.PRIMARY,
+            damage = 1200,
+            critChance = 0.30f,
+            critMultiplier = 2.8f,
+            statusChance = 0.28f,
+            fireRate = 1.5f,
+            accuracy = 6.5f,
+            magazine = 7,
+            reload = 3.5f,
+            mastery = 14,
+            origin = ContentOrigin.ZARIMAN
+        ),
+        Weapon(
+            "Innodem",
+            WeaponType.MELEE,
+            damage = 212,
+            critChance = 0.28f,
+            critMultiplier = 2.4f,
+            statusChance = 0.24f,
+            fireRate = 1.0f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 14,
+            origin = ContentOrigin.ZARIMAN
+        ),
+        // Warframe 1999 Weapons (Hollvania/Scaldra)
+        Weapon(
+            "Aoi",
+            WeaponType.MELEE,
+            damage = 245,
+            critChance = 0.32f,
+            critMultiplier = 2.8f,
+            statusChance = 0.20f,
+            fireRate = 1.0f,
+            accuracy = 100f,
+            magazine = 0,
+            reload = 0.0f,
+            mastery = 12,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Weapon(
+            "Onos",
+            WeaponType.PRIMARY,
+            damage = 280,
+            critChance = 0.35f,
+            critMultiplier = 3.0f,
+            statusChance = 0.15f,
+            fireRate = 2.5f,
+            accuracy = 25.0f,
+            magazine = 8,
+            reload = 2.4f,
+            mastery = 14,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Weapon(
+            "Ruvox",
+            WeaponType.PRIMARY,
+            damage = 68,
+            critChance = 0.28f,
+            critMultiplier = 2.6f,
+            statusChance = 0.24f,
+            fireRate = 7.5f,
+            accuracy = 100f,
+            magazine = 75,
+            reload = 2.2f,
+            mastery = 10,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Weapon(
+            "Vesper 47",
+            WeaponType.PRIMARY,
+            damage = 36,
+            critChance = 0.22f,
+            critMultiplier = 2.2f,
+            statusChance = 0.30f,
+            fireRate = 11.67f,
+            accuracy = 45.5f,
+            magazine = 60,
+            reload = 1.8f,
+            mastery = 8,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Weapon(
+            "Mandonel",
+            WeaponType.SECONDARY,
+            damage = 220,
+            critChance = 0.24f,
+            critMultiplier = 2.0f,
+            statusChance = 0.32f,
+            fireRate = 1.0f,
+            accuracy = 100f,
+            magazine = 6,
+            reload = 2.5f,
+            mastery = 12,
+            origin = ContentOrigin.HOLLVANIA_1999
+        ),
+        Weapon(
+            "Lex Prime (1999 Variant)",
+            WeaponType.SECONDARY,
+            damage = 120,
+            critChance = 0.30f,
+            critMultiplier = 2.8f,
+            statusChance = 0.12f,
+            fireRate = 2.08f,
+            accuracy = 100f,
+            magazine = 8,
+            reload = 2.0f,
+            mastery = 10,
+            isPrime = true,
+            origin = ContentOrigin.HOLLVANIA_1999
         )
     )
 
@@ -1473,6 +1910,45 @@ object WarframeRepository {
             mastery = 0
         )
     )
+
+    // Helper methods for filtering by origin
+    fun getWarframesByOrigin(origin: ContentOrigin): List<Warframe> {
+        return warframes.filter { it.origin == origin }
+    }
+
+    fun getWeaponsByOrigin(origin: ContentOrigin): List<Weapon> {
+        return weapons.filter { it.origin == origin }
+    }
+
+    fun getModsByOrigin(origin: ContentOrigin): List<Mod> {
+        return mods.filter { it.origin == origin }
+    }
+
+    fun getAllWarframeOrigins(): Set<ContentOrigin> {
+        return warframes.map { it.origin }.toSet()
+    }
+
+    fun getAllWeaponOrigins(): Set<ContentOrigin> {
+        return weapons.map { it.origin }.toSet()
+    }
+
+    fun getAllModOrigins(): Set<ContentOrigin> {
+        return mods.map { it.origin }.toSet()
+    }
+
+    // Helper methods for filtering by weapon type with origin
+    fun getWeaponsByTypeAndOrigin(type: WeaponType, origin: ContentOrigin): List<Weapon> {
+        return weapons.filter { it.type == type && it.origin == origin }
+    }
+
+    // Get counts for each origin
+    fun getWarframeCountByOrigin(): Map<ContentOrigin, Int> {
+        return warframes.groupingBy { it.origin }.eachCount()
+    }
+
+    fun getWeaponCountByOrigin(): Map<ContentOrigin, Int> {
+        return weapons.groupingBy { it.origin }.eachCount()
+    }
 }
 
 // Resource Inventory Management
