@@ -494,6 +494,366 @@ object WarframeRepository {
                 Ability("Discharge", "Emit electricity in all directions", 100)
             ),
             mastery = 0
+        ),
+        Warframe(
+            "Wisp",
+            "Wisp floats between the material and the ethereal. She accesses multiple dimensions to support allies.",
+            health = 100,
+            shield = 175,
+            armor = 175,
+            energy = 200,
+            abilities = listOf(
+                Ability("Reservoirs", "Create health, speed, or shock motes", 50),
+                Ability("Wil-O-Wisp", "Open a portal to summon a decoy", 50),
+                Ability("Breach Surge", "Open breaches to the sun and blind enemies", 75),
+                Ability("Sol Gate", "Open a portal to the sun to burn enemies", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Mesa",
+            "With lethal pistol skills, Mesa is the fastest draw in the system.",
+            health = 125,
+            shield = 75,
+            armor = 65,
+            energy = 112,
+            abilities = listOf(
+                Ability("Ballistic Battery", "Charge a defensive battery", 25),
+                Ability("Shooting Gallery", "Stun nearby enemies", 50),
+                Ability("Shatter Shield", "Reduce incoming ranged damage", 50),
+                Ability("Peacemaker", "Draw dual pistols with perfect accuracy", 25)
+            ),
+            mastery = 2
+        ),
+        Warframe(
+            "Saryn",
+            "Saryn is a master of poison and contagion, spreading death with every touch.",
+            health = 125,
+            shield = 100,
+            armor = 225,
+            energy = 150,
+            abilities = listOf(
+                Ability("Spores", "Spread toxin spores that burst on contact", 25),
+                Ability("Molt", "Shed skin to create a decoy", 50),
+                Ability("Toxic Lash", "Infuse melee weapon with toxin", 75),
+                Ability("Miasma", "Release a noxious cloud of spores", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Octavia",
+            "Compose her song and then conduct the deadly chorus. Octavia is music and destruction.",
+            health = 100,
+            shield = 100,
+            armor = 125,
+            energy = 225,
+            abilities = listOf(
+                Ability("Mallet", "Deploy rhythmic beats to damage enemies", 25),
+                Ability("Resonator", "Deploy a roaming ball that charms enemies", 50),
+                Ability("Metronome", "Grant buffs to allies matching the beat", 75),
+                Ability("Amp", "Amplify all sound damage in the area", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Protea",
+            "Manipulate time to support allies and damage enemies. Protea is a temporal engineer.",
+            health = 100,
+            shield = 50,
+            armor = 175,
+            energy = 175,
+            abilities = listOf(
+                Ability("Grenade Fan", "Throw grenades that deal damage", 25),
+                Ability("Blaze Artillery", "Deploy an auto-turret", 50),
+                Ability("Dispensary", "Create a source of energy, health, and ammo", 75),
+                Ability("Temporal Anchor", "Rewind time to restore health and energy", 75)
+            ),
+            mastery = 7
+        ),
+        Warframe(
+            "Revenant",
+            "Control the minds of enemies and become an avatar of sentient power.",
+            health = 100,
+            shield = 225,
+            armor = 105,
+            energy = 150,
+            abilities = listOf(
+                Ability("Enthrall", "Convert enemies into thralls", 25),
+                Ability("Mesmer Skin", "Charges that stun attackers", 50),
+                Ability("Reave", "Dash through enemies stealing health and shields", 75),
+                Ability("Danse Macabre", "Emit energy beams from fingertips", 25)
+            ),
+            mastery = 7
+        ),
+        Warframe(
+            "Wukong",
+            "The trickster warrior. Wukong has two lives, and can summon a clone.",
+            health = 100,
+            shield = 125,
+            armor = 225,
+            energy = 100,
+            abilities = listOf(
+                Ability("Celestial Twin", "Summon a clone to fight", 25),
+                Ability("Cloud Walker", "Become mist and move quickly", 25),
+                Ability("Defy", "Become invulnerable and taunt enemies", 50),
+                Ability("Primal Fury", "Summon an exalted staff", 25)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Nezha",
+            "The flaming spearman. Nezha combines agility with defensive rings.",
+            health = 100,
+            shield = 125,
+            armor = 175,
+            energy = 150,
+            abilities = listOf(
+                Ability("Fire Walker", "Leave a trail of flame", 25),
+                Ability("Blazing Chakram", "Throw a ring of fire", 50),
+                Ability("Warding Halo", "Create a protective ring", 75),
+                Ability("Divine Spears", "Impale enemies on flaming spears", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Gauss",
+            "Redline Gauss' battery to unlock devastating speed and damage.",
+            health = 100,
+            shield = 125,
+            armor = 175,
+            energy = 150,
+            abilities = listOf(
+                Ability("Mach Rush", "Rush forward at high speed", 25),
+                Ability("Kinetic Plating", "Store kinetic energy as armor", 50),
+                Ability("Thermal Sunder", "Freeze or heat enemies", 75),
+                Ability("Redline", "Charge battery to boost abilities", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Khora",
+            "Command the beast Venari and lash enemies with living chains.",
+            health = 100,
+            shield = 100,
+            armor = 275,
+            energy = 150,
+            abilities = listOf(
+                Ability("Whipclaw", "Lash out with a living chain", 25),
+                Ability("Ensnare", "Trap enemies in living chains", 25),
+                Ability("Venari", "Command a feral kavat", 0),
+                Ability("Strangledome", "Create a dome of strangling chains", 100)
+            ),
+            mastery = 8
+        ),
+        Warframe(
+            "Nova",
+            "Manipulate antimatter to devastate enemies. Nova creates deadly explosions.",
+            health = 100,
+            shield = 75,
+            armor = 65,
+            energy = 150,
+            abilities = listOf(
+                Ability("Null Star", "Create antimatter particles for defense", 25),
+                Ability("Antimatter Drop", "Launch an antimatter bomb", 50),
+                Ability("Worm Hole", "Create a portal for quick travel", 75),
+                Ability("Molecular Prime", "Irradiate enemies with volatile antimatter", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Trinity",
+            "Healer and support. Trinity sustains allies with health and energy.",
+            health = 100,
+            shield = 100,
+            armor = 15,
+            energy = 150,
+            abilities = listOf(
+                Ability("Well of Life", "Mark an enemy to become a health fountain", 25),
+                Ability("Energy Vampire", "Drain energy from an enemy", 50),
+                Ability("Link", "Link to enemies to share damage", 75),
+                Ability("Blessing", "Restore health and shields to all allies", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Frost",
+            "Master of ice. Frost freezes enemies and protects objectives.",
+            health = 100,
+            shield = 150,
+            armor = 300,
+            energy = 100,
+            abilities = listOf(
+                Ability("Freeze", "Launch a shard of ice", 25),
+                Ability("Ice Wave", "Send a wave of ice", 50),
+                Ability("Snow Globe", "Create a protective sphere of ice", 50),
+                Ability("Avalanche", "Summon a hail of ice shards", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Loki",
+            "The trickster. Loki uses invisibility and deception.",
+            health = 75,
+            shield = 75,
+            armor = 65,
+            energy = 175,
+            abilities = listOf(
+                Ability("Decoy", "Create a holographic decoy", 25),
+                Ability("Invisibility", "Become invisible", 50),
+                Ability("Switch Teleport", "Swap positions with a target", 25),
+                Ability("Radial Disarm", "Disarm all nearby enemies", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Ash",
+            "The ninja. Ash assassinates enemies with deadly efficiency.",
+            health = 100,
+            shield = 100,
+            armor = 65,
+            energy = 150,
+            abilities = listOf(
+                Ability("Shuriken", "Throw shurikens to strip armor", 25),
+                Ability("Smoke Screen", "Drop a smoke bomb and vanish", 50),
+                Ability("Teleport", "Teleport to a target", 25),
+                Ability("Blade Storm", "Mark enemies for assassination", 75)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Nidus",
+            "The infested frame. Nidus grows stronger as he consumes enemies.",
+            health = 150,
+            shield = 0,
+            armor = 300,
+            energy = 100,
+            abilities = listOf(
+                Ability("Virulence", "Burst with infested energy", 0),
+                Ability("Larva", "Pull enemies into a larva mass", 0),
+                Ability("Parasitic Link", "Link to allies or enemies", 0),
+                Ability("Ravenous", "Create an infested garden", 0)
+            ),
+            mastery = 5
+        ),
+        Warframe(
+            "Inaros",
+            "The mummy warframe. Inaros has massive health and no shields.",
+            health = 550,
+            shield = 0,
+            armor = 200,
+            energy = 100,
+            abilities = listOf(
+                Ability("Desiccation", "Blind enemies with sand", 25),
+                Ability("Devour", "Consume an enemy to heal", 50),
+                Ability("Sandstorm", "Become a whirling sandstorm", 75),
+                Ability("Scarab Swarm", "Deploy a swarm of scarabs", 100)
+            ),
+            mastery = 5
+        ),
+        Warframe(
+            "Chroma",
+            "The elemental dragon. Chroma adapts to damage and grows stronger.",
+            health = 100,
+            shield = 100,
+            armor = 350,
+            energy = 150,
+            abilities = listOf(
+                Ability("Spectral Scream", "Breathe elemental fury", 25),
+                Ability("Elemental Ward", "Emit an elemental aura", 50),
+                Ability("Vex Armor", "Convert damage into energy and armor", 75),
+                Ability("Effigy", "Summon a dragon pelt", 50)
+            ),
+            mastery = 5
+        ),
+        Warframe(
+            "Valkyr",
+            "The berserker. Valkyr unleashes rage with devastating melee attacks.",
+            health = 100,
+            shield = 50,
+            armor = 600,
+            energy = 100,
+            abilities = listOf(
+                Ability("Rip Line", "Rip to a target or pull target to you", 25),
+                Ability("Warcry", "Boost attack speed and slow enemies", 50),
+                Ability("Paralysis", "Emit a wave that stuns enemies", 75),
+                Ability("Hysteria", "Enter a rage and use exalted claws", 25)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Ember",
+            "Master of fire. Ember immolates enemies with heat.",
+            health = 100,
+            shield = 100,
+            armor = 125,
+            energy = 150,
+            abilities = listOf(
+                Ability("Fireball", "Launch a fireball", 25),
+                Ability("Immolation", "Protect yourself with heat", 0),
+                Ability("Fire Blast", "Emit a wave of fire", 50),
+                Ability("Inferno", "Engulf enemies in flame", 100)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Titania",
+            "The fairy queen. Titania shrinks and takes flight.",
+            health = 100,
+            shield = 100,
+            armor = 65,
+            energy = 150,
+            abilities = listOf(
+                Ability("Spellbind", "Cast a debuff on enemies", 25),
+                Ability("Tribute", "Drain health and grant buffs", 25),
+                Ability("Lantern", "Lift an enemy and attract others", 50),
+                Ability("Razorwing", "Shrink and take flight with weapons", 25)
+            ),
+            mastery = 7
+        ),
+        Warframe(
+            "Garuda",
+            "The blood priestess. Garuda sacrifices health for deadly power.",
+            health = 100,
+            shield = 50,
+            armor = 175,
+            energy = 150,
+            abilities = listOf(
+                Ability("Dread Mirror", "Capture damage in a mirror", 50),
+                Ability("Blood Altar", "Impale an enemy for healing", 50),
+                Ability("Bloodletting", "Sacrifice health for energy", 0),
+                Ability("Seeking Talons", "Launch projectiles that track enemies", 100)
+            ),
+            mastery = 5
+        ),
+        Warframe(
+            "Limbo",
+            "Master of the rift. Limbo phases between dimensions.",
+            health = 100,
+            shield = 75,
+            armor = 65,
+            energy = 150,
+            abilities = listOf(
+                Ability("Banish", "Send targets to the rift", 25),
+                Ability("Stasis", "Freeze time in the rift", 25),
+                Ability("Rift Surge", "Surge rift energy into enemies", 50),
+                Ability("Cataclysm", "Create a massive rift bubble", 50)
+            ),
+            mastery = 0
+        ),
+        Warframe(
+            "Oberon",
+            "The paladin. Oberon heals allies and smites enemies.",
+            health = 125,
+            shield = 100,
+            armor = 150,
+            energy = 150,
+            abilities = listOf(
+                Ability("Smite", "Send a projectile that seeks enemies", 25),
+                Ability("Hallowed Ground", "Sanctify ground to protect allies", 25),
+                Ability("Renewal", "Heal allies over time", 25),
+                Ability("Reckoning", "Lift and damage enemies", 100)
+            ),
+            mastery = 0
         )
     )
 
