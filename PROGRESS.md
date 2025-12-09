@@ -18,8 +18,7 @@
 - **Navigation**: Drawer menu configured with all sections
 
 ### ⚠️ Known Issues
-1. **Bottom navigation tabs don't switch** - Wired in code but not functioning
-2. **Limited static data**:
+1. **Limited static data**:
    - Only 5 Warframes (Excalibur, Rhino, Rhino Prime, Mag, Volt)
    - Minimal weapons (Braton, Braton Prime, etc.)
    - **NO MODS DATABASE** - Missing entirely
