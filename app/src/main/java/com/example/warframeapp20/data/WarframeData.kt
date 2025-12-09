@@ -1358,6 +1358,92 @@ object WarframeRepository {
         )
     )
 
+    val mods = listOf(
+        // Primary Weapon Mods
+        Mod("Serration", "+165% Damage", ModType.PRIMARY, ModRarity.COMMON, 10, Polarity.MADURAI),
+        Mod("Split Chamber", "+90% Multishot", ModType.PRIMARY, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Point Strike", "+150% Critical Chance", ModType.PRIMARY, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Vital Sense", "+120% Critical Damage", ModType.PRIMARY, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Hellfire", "+90% Heat Damage", ModType.PRIMARY, ModRarity.UNCOMMON, 10, Polarity.MADURAI),
+        Mod("Cryo Rounds", "+90% Cold Damage", ModType.PRIMARY, ModRarity.UNCOMMON, 10, Polarity.NARAMON),
+        Mod("Stormbringer", "+90% Electricity Damage", ModType.PRIMARY, ModRarity.UNCOMMON, 10, Polarity.MADURAI),
+        Mod("Infected Clip", "+90% Toxin Damage", ModType.PRIMARY, ModRarity.UNCOMMON, 10, Polarity.NARAMON),
+        Mod("Malignant Force", "+60% Toxin, +60% Status", ModType.PRIMARY, ModRarity.RARE, 5, Polarity.NARAMON),
+        Mod("Rime Rounds", "+60% Cold, +60% Status", ModType.PRIMARY, ModRarity.RARE, 5, Polarity.NARAMON),
+        Mod("High Voltage", "+60% Electricity, +60% Status", ModType.PRIMARY, ModRarity.RARE, 5, Polarity.MADURAI),
+        Mod("Thermite Rounds", "+60% Heat, +60% Status", ModType.PRIMARY, ModRarity.RARE, 5, Polarity.MADURAI),
+        Mod("Heavy Caliber", "+165% Damage, -55% Accuracy", ModType.PRIMARY, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Hunter Munitions", "30% chance for slash on crit", ModType.PRIMARY, ModRarity.RARE, 5, Polarity.MADURAI),
+        Mod("Vigilante Armaments", "+60% Multishot", ModType.PRIMARY, ModRarity.RARE, 5, Polarity.MADURAI),
+
+        // Secondary Weapon Mods
+        Mod("Hornet Strike", "+220% Damage", ModType.SECONDARY, ModRarity.COMMON, 10, Polarity.MADURAI),
+        Mod("Barrel Diffusion", "+120% Multishot", ModType.SECONDARY, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Lethal Torrent", "+60% Fire Rate, +60% Multishot", ModType.SECONDARY, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Pistol Gambit", "+120% Critical Chance", ModType.SECONDARY, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Target Cracker", "+60% Critical Damage", ModType.SECONDARY, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Convulsion", "+90% Electricity Damage", ModType.SECONDARY, ModRarity.UNCOMMON, 10, Polarity.MADURAI),
+        Mod("Deep Freeze", "+90% Cold Damage", ModType.SECONDARY, ModRarity.UNCOMMON, 10, Polarity.NARAMON),
+        Mod("Heated Charge", "+90% Heat Damage", ModType.SECONDARY, ModRarity.UNCOMMON, 10, Polarity.MADURAI),
+        Mod("Pathogen Rounds", "+90% Toxin Damage", ModType.SECONDARY, ModRarity.UNCOMMON, 10, Polarity.NARAMON),
+
+        // Melee Weapon Mods
+        Mod("Pressure Point", "+120% Damage", ModType.MELEE, ModRarity.COMMON, 10, Polarity.MADURAI),
+        Mod("Condition Overload", "+120% damage per status type", ModType.MELEE, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Blood Rush", "Critical Chance scales with combo", ModType.MELEE, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Weeping Wounds", "Status Chance scales with combo", ModType.MELEE, ModRarity.RARE, 10, Polarity.NARAMON),
+        Mod("Organ Shatter", "+90% Critical Damage", ModType.MELEE, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("True Steel", "+60% Critical Chance", ModType.MELEE, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Berserker Fury", "+75% Attack Speed on crit", ModType.MELEE, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Molten Impact", "+90% Heat Damage", ModType.MELEE, ModRarity.UNCOMMON, 10, Polarity.MADURAI),
+        Mod("North Wind", "+90% Cold Damage", ModType.MELEE, ModRarity.UNCOMMON, 10, Polarity.NARAMON),
+        Mod("Shocking Touch", "+90% Electricity Damage", ModType.MELEE, ModRarity.UNCOMMON, 10, Polarity.MADURAI),
+        Mod("Fever Strike", "+90% Toxin Damage", ModType.MELEE, ModRarity.UNCOMMON, 10, Polarity.NARAMON),
+        Mod("Primed Reach", "+3m Range", ModType.MELEE, ModRarity.PRIMED, 10, Polarity.NARAMON),
+        Mod("Drifting Contact", "+40% Status Duration, +28s Combo", ModType.MELEE, ModRarity.RARE, 10, Polarity.NARAMON),
+
+        // Warframe Survival Mods
+        Mod("Vitality", "+440% Health", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.VAZARIN),
+        Mod("Redirection", "+440% Shields", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.VAZARIN),
+        Mod("Steel Fiber", "+110% Armor", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.VAZARIN),
+        Mod("Primed Vigor", "+165% Health, +110% Shields", ModType.WARFRAME, ModRarity.PRIMED, 10, Polarity.VAZARIN),
+        Mod("Adaptation", "Gain damage resistance to types received", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.VAZARIN),
+        Mod("Rolling Guard", "Brief invulnerability after rolling", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.VAZARIN),
+        Mod("Quick Thinking", "Use energy to prevent death", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.VAZARIN),
+        Mod("Rage", "Convert health damage to energy", ModType.WARFRAME, ModRarity.UNCOMMON, 10, Polarity.MADURAI),
+        Mod("Hunter Adrenaline", "Convert health damage to energy", ModType.WARFRAME, ModRarity.RARE, 5, Polarity.MADURAI),
+
+        // Warframe Ability Mods
+        Mod("Intensify", "+30% Ability Strength", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.MADURAI),
+        Mod("Blind Rage", "+99% Strength, -55% Efficiency", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Transient Fortitude", "+55% Strength, -27.5% Duration", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.MADURAI),
+        Mod("Streamline", "+30% Ability Efficiency", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.NARAMON),
+        Mod("Fleeting Expertise", "+60% Efficiency, -60% Duration", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.NARAMON),
+        Mod("Continuity", "+30% Ability Duration", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.VAZARIN),
+        Mod("Primed Continuity", "+55% Ability Duration", ModType.WARFRAME, ModRarity.PRIMED, 10, Polarity.VAZARIN),
+        Mod("Narrow Minded", "+99% Duration, -66% Range", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.VAZARIN),
+        Mod("Stretch", "+45% Ability Range", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.NARAMON),
+        Mod("Overextended", "+90% Range, -60% Strength", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.NARAMON),
+        Mod("Augur Reach", "+30% Ability Range", ModType.WARFRAME, ModRarity.RARE, 5, Polarity.NARAMON),
+
+        // Warframe Utility Mods
+        Mod("Flow", "+150% Energy Max", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.NARAMON),
+        Mod("Primed Flow", "+275% Energy Max", ModType.WARFRAME, ModRarity.PRIMED, 10, Polarity.NARAMON),
+        Mod("Natural Talent", "+50% Casting Speed", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.NARAMON),
+        Mod("Handspring", "Knockdown Recovery", ModType.WARFRAME, ModRarity.UNCOMMON, 10, Polarity.VAZARIN),
+        Mod("Power Drift", "+15% Strength, +30% Friction", ModType.WARFRAME, ModRarity.RARE, 5, Polarity.EXILUS),
+        Mod("Rush", "+30% Sprint Speed", ModType.WARFRAME, ModRarity.COMMON, 10, Polarity.NARAMON),
+        Mod("Armored Agility", "+45% Sprint Speed, +15% Armor", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.EXILUS),
+        Mod("Constitution", "+28% Duration, +40% Knockdown Recovery", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.VAZARIN),
+
+        // Aura Mods
+        Mod("Steel Charge", "+60% Melee Damage to team", ModType.WARFRAME, ModRarity.UNCOMMON, 10, Polarity.AURA),
+        Mod("Energy Siphon", "+0.6 Energy/s to team", ModType.WARFRAME, ModRarity.UNCOMMON, 10, Polarity.AURA),
+        Mod("Corrosive Projection", "-18% Enemy Armor", ModType.WARFRAME, ModRarity.UNCOMMON, 10, Polarity.AURA),
+        Mod("Rejuvenation", "+3 Health/s to team", ModType.WARFRAME, ModRarity.UNCOMMON, 10, Polarity.AURA),
+        Mod("Growing Power", "+25% Strength on status to team", ModType.WARFRAME, ModRarity.RARE, 10, Polarity.AURA)
+    )
+
     val companions = listOf(
         Companion(
             "Carrier",
