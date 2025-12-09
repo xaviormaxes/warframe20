@@ -28,12 +28,14 @@
 ### ⚠️ PARTIALLY IMPLEMENTED
 | Feature | What Works | What's Missing |
 |---------|-----------|----------------|
+| **Arsenal** | ✅ UI with tabs | ✅ **NOW HAS DATA!** 30 warframes, 43 weapons |
+| **Warframes List** | ✅ Screen exists | ✅ **EXPANDED!** 30 popular warframes (was 5) |
+| **Weapons List** | ✅ Screen exists | ✅ **EXPANDED!** 43 weapons (was 3) |
 | **Market** | ✅ UI exists | ❌ No Warframe.Market API integration |
-| **Builds** | ✅ BuildEditor UI | ❌ No mods database, no mod library |
+| **Builds** | ✅ BuildEditor UI | ✅ **MODS ADDED!** 69 essential mods |
 | **Resources** | ✅ UI exists | ❌ No resource tracking data |
 
 ### ❌ NOT IMPLEMENTED YET
-- **Mods Database** - Completely missing (0 mods)
 - **API Sync** - No sync functionality for weapons/warframes/mods
 - **Warframe 1999 Content** - No Scaldra, Hollvania, or 1999-specific items
 - **Login System** - Exists but bypassed for testing
