@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="World Status"
+            android:text="@string/world_status"
             android:textColor="?attr/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -49,7 +49,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cetus"
+                        android:text="@string/cetus"
                         android:textColor="?attr/colorOnSurface"
                         android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="?attr/colorPrimary"
                         android:textSize="16sp"
-                        android:text="Day" />
+                        android:text="@string/day" />
 
                     <TextView
                         android:id="@+id/cetusTimeLeftTextView"
@@ -67,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="?attr/android:textColorSecondary"
                         android:textSize="12sp"
-                        android:text="2h 34m" />
+                        android:text="@string/time_2h_34m" />
                 </LinearLayout>
 
                 <!-- Orb Vallis -->
@@ -81,7 +81,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Orb Vallis"
+                        android:text="@string/orb_vallis"
                         android:textColor="?attr/colorOnSurface"
                         android:textStyle="bold" />
 
@@ -91,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="?attr/colorSecondary"
                         android:textSize="16sp"
-                        android:text="Cold" />
+                        android:text="@string/cold" />
 
                     <TextView
                         android:id="@+id/vallisTimeLeftTextView"
@@ -99,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="?attr/android:textColorSecondary"
                         android:textSize="12sp"
-                        android:text="14m" />
+                        android:text="@string/time_14m" />
                 </LinearLayout>
 
                 <!-- Cambion Drift -->
@@ -113,7 +113,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cambion"
+                        android:text="@string/cambion"
                         android:textColor="?attr/colorOnSurface"
                         android:textStyle="bold" />
 
@@ -123,7 +123,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="?attr/colorSecondary"
                         android:textSize="16sp"
-                        android:text="Fass" />
+                        android:text="@string/fass" />
 
                     <TextView
                         android:id="@+id/cambionTimeLeftTextView"
@@ -131,7 +131,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="?attr/android:textColorSecondary"
                         android:textSize="12sp"
-                        android:text="45m" />
+                        android:text="@string/time_45m" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -140,7 +140,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Active Invasions"
+            android:text="@string/active_invasions"
             android:textColor="?attr/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -159,7 +159,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Special Events"
+            android:text="@string/special_events"
             android:textColor="?attr/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -185,7 +185,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Void Fissures"
+                android:text="@string/void_fissures"
                 android:textColor="?attr/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -193,7 +193,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5 Active"
+                android:text="@string/active_count_5"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -218,7 +218,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Daily Sortie"
+                android:text="@string/daily_sortie"
                 android:textColor="?attr/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -226,7 +226,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Resets in 18h 34m"
+                android:text="@string/resets_in_18h_34m"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -261,7 +261,7 @@
                             android:id="@+id/sortieBossTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kela De Thaym"
+                            android:text="@string/kela_de_thaym"
                             android:textColor="?attr/colorOnSurface"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -270,7 +270,7 @@
                             android:id="@+id/sortieFactionTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Grineer"
+                            android:text="@string/grineer"
                             android:textColor="?attr/android:textColorSecondary" />
                     </LinearLayout>
 
@@ -279,7 +279,7 @@
                         android:layout_height="24dp"
                         android:src="@drawable/ic_shield_24dp"
                         app:tint="?attr/colorError"
-                        android:contentDescription="Sortie boss icon" />
+                        android:contentDescription="@string/sortie_boss_icon_desc" />
                 </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -302,7 +302,7 @@
                     android:id="@+id/sortieRewardTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Rewards: Anasa Sculpture (28%), Riven (20%), 3-Day Booster (20%)"
+                    android:text="@string/sortie_rewards"
                     android:textColor="?attr/android:textColorSecondary"
                     android:textSize="12sp" />
             </LinearLayout>

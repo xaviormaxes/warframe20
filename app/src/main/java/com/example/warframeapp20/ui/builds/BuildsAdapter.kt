@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.builds
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +19,7 @@ class BuildsAdapter(
 
     private var builds = listOf<Build>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateBuilds(newBuilds: List<Build>) {
         builds = newBuilds
         notifyDataSetChanged()

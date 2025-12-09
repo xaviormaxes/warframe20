@@ -23,7 +23,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_warframe_24dp"
-            android:contentDescription="Warframe"
+            android:contentDescription="@string/warframe_desc"
             app:tint="?attr/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +32,7 @@
             android:id="@+id/chip_prime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRIME"
+            android:text="@string/prime_label"
             android:textSize="10sp"
             android:visibility="gone"
             app:chipBackgroundColor="?attr/colorSecondary"
@@ -102,7 +102,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:src="@drawable/ic_shield_24dp"
-                    android:contentDescription="Health"
+                    android:contentDescription="@string/health_desc"
                     app:tint="?attr/colorPrimary" />
 
                 <TextView
@@ -127,7 +127,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:src="@drawable/ic_shield_24dp"
-                    android:contentDescription="Shield"
+                    android:contentDescription="@string/shield_desc"
                     app:tint="?attr/colorSecondary" />
 
                 <TextView
@@ -152,7 +152,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:src="@drawable/ic_shield_24dp"
-                    android:contentDescription="Armor"
+                    android:contentDescription="@string/armor_desc"
                     app:tint="?attr/android:textColorSecondary" />
 
                 <TextView
@@ -177,7 +177,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:src="@drawable/ic_warframe_24dp"
-                    android:contentDescription="Energy"
+                    android:contentDescription="@string/energy_desc"
                     app:tint="?attr/colorSecondary" />
 
                 <TextView

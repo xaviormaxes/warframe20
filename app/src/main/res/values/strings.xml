@@ -118,4 +118,137 @@
     <string name="image_view_item_transform_content_description">Represents an image view in the
                 item
             </string>
+    
+    <!-- Login screen strings -->
+    <string name="login_title">TENNO ACCESS</string>
+    <string name="username_hint">USERNAME</string>
+    <string name="password_hint">PASSWORD</string>
+    <string name="login_button">LOGIN</string>
+    <string name="guest_button">CONTINUE AS GUEST</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="connecting">CONNECTING...</string>
+    <string name="login_error_empty">Please enter both username and password</string>
+    <string name="login_error_invalid">Invalid credentials</string>
+    
+    <!-- Content descriptions -->
+    <string name="warframe_logo_desc">Warframe Logo</string>
+    <string name="change_theme_desc">Change theme</string>
+    <string name="event_icon_desc">Event icon</string>
+    <string name="sortie_boss_icon_desc">Sortie boss icon</string>
+    <string name="avatar_image_desc">Avatar image</string>
+    <string name="warframe_desc">Warframe</string>
+    <string name="weapon_desc">Weapon</string>
+    <string name="health_desc">Health</string>
+    <string name="shield_desc">Shield</string>
+    <string name="armor_desc">Armor</string>
+    <string name="energy_desc">Energy</string>
+    
+    <!-- Menu items - Arsenal section -->
+    <string name="menu_arsenal_title">Arsenal</string>
+    
+    <!-- Menu items - Trading section -->
+    <string name="menu_trading_economy">Trading &amp; Economy</string>
+    
+    <!-- Menu items - Planning section -->
+    <string name="menu_planning_management">Planning &amp; Management</string>
+    
+    <!-- Menu items - Tools section -->
+    <string name="menu_tools">Tools</string>
+    
+    <!-- Bottom navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_world">World</string>
+    <string name="nav_codex">Codex</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_fissures">Fissures</string>
+    <string name="nav_missions">Missions</string>
+    <string name="nav_progress">Progress</string>
+    
+    <!-- Dialog strings -->
+    <string name="dialog_item_name">Item Name</string>
+    <string name="dialog_close">Close</string>
+    <string name="dialog_sell_orders">Sell Orders</string>
+    <string name="dialog_buy_orders">Buy Orders</string>
+    
+    <!-- World State strings -->
+    <string name="world_status">World Status</string>
+    <string name="cetus">Cetus</string>
+    <string name="day">Day</string>
+    <string name="time_2h_34m">2h 34m</string>
+    <string name="orb_vallis">Orb Vallis</string>
+    <string name="cold">Cold</string>
+    <string name="time_14m">14m</string>
+    <string name="cambion">Cambion</string>
+    <string name="fass">Fass</string>
+    <string name="time_45m">45m</string>
+    <string name="special_events">Special Events</string>
+    <string name="void_fissures">Void Fissures</string>
+    <string name="active_count_5">5 Active</string>
+    <string name="daily_sortie">Daily Sortie</string>
+    <string name="resets_in_18h_34m">Resets in 18h 34m</string>
+    <string name="kela_de_thaym">Kela De Thaym</string>
+    <string name="grineer">Grineer</string>
+    <string name="sortie_rewards" formatted="false">Rewards: Anasa Sculpture (28%), Riven (20%), 3-Day Booster (20%)</string>
+    
+    <!-- About fragment strings -->
+    <string name="version_1_0">Version 1.0</string>
+    <string name="app_description">Your ultimate companion for the Origin System. Track world state, browse Warframes, weapons, and stay updated with the latest from the Warframe universe.</string>
+    <string name="features_title">Features</string>
+    <string name="features_list">• Real-time world state tracking\n• Comprehensive Warframe database\n• Weapon and mod information\n• Multiple Warframe-themed UI options\n• Invasion and fissure tracking\n• Event notifications</string>
+    <string name="stay_strong_tenno">Stay strong, Tenno.</string>
+    
+    <!-- Builds fragment strings -->
+    <string name="mod_suggestions">Mod Suggestions</string>
+    <string name="no_builds_yet">No builds yet</string>
+    <string name="create_first_build">Create your first build to get started</string>
+    
+    <!-- Feature coming soon strings -->
+    <string name="clan_management_coming_soon">Clan management coming soon...</string>
+    <string name="foundry_management_coming_soon">Foundry management coming soon...</string>
+    <string name="riven_management_coming_soon">Riven management coming soon...</string>
+    
+    <!-- Fissures fragment strings -->
+    <string name="active_void_fissures_desc">Active Void Fissures across the Origin System</string>
+    
+    <!-- Market fragment strings -->
+    <string name="no_items_found">No items found</string>
+    
+    <!-- Reflow fragment strings -->
+    <string name="reflow_fragment_title">Reflow Fragment</string>
+    
+    <!-- Resources fragment strings -->
+    <string name="project_progress">Project Progress</string>
+    <string name="farming_route">Farming Route</string>
+    <string name="farming_tips">Farming Tips</string>
+    <string name="tap_for_optimization_tips">Tap for optimization tips</string>
+    <string name="recommendations">Recommendations</string>
+    
+    <!-- Themes fragment strings -->
+    <string name="theme_change_instruction">Tap the theme button in the toolbar to change themes.</string>
+    
+    <!-- Warframes fragment strings -->
+    <string name="warframes_description">Ancient warriors wielding incredible power</string>
+    
+    <!-- Market order item strings -->
+    <string name="price_100p">100p</string>
+    <string name="quantity_x1">x1</string>
+    <string name="username_placeholder">Username</string>
+    <string name="status_online">online</string>
+    
+    <!-- Warframe item strings -->
+    <string name="prime_label">PRIME</string>
+    
+    <!-- Weapon item strings -->
+    <string name="damage_label">DMG</string>
+    <string name="crit_label">CRIT</string>
+    
+    <!-- Main menu strings -->
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">Search</string>
+    
+    <!-- Additional menu sections -->
+    <string name="menu_world_state">World State</string>
+    <string name="menu_resources_section">Resources</string>
+    <string name="menu_app_section">App</string>
 </resources>

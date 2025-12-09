@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.dashboard
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.warframeapp20.R
 import com.example.warframeapp20.data.Fissure
+import com.example.warframeapp20.util.CountdownTimer
 
 class FissureAdapter(private var fissures: List<Fissure>) : 
     RecyclerView.Adapter<FissureAdapter.FissureViewHolder>() {
@@ -34,7 +36,20 @@ class FissureAdapter(private var fissures: List<Fissure>) :
         holder.missionText.text = fissure.missionType
         holder.locationText.text = fissure.node
         holder.enemyText.text = fissure.enemy
-        holder.timeText.text = fissure.eta
+        
+        // Start countdown timer for this fissure
+        val timerId = "fissure_${fissure.id}"
+        CountdownTimer.startCountdown(
+            id = timerId,
+            expiryTime = fissure.expiry,
+            onUpdate = { timeString ->
+                holder.timeText.text = timeString
+            },
+            onExpired = {
+                holder.timeText.text = "Expired"
+                holder.timeText.setTextColor(ContextCompat.getColor(holder.itemView.context, android.R.color.holo_red_light))
+            }
+        )
 
         // Set era-specific colors
         val eraColor = when (fissure.tier) {
@@ -62,8 +77,18 @@ class FissureAdapter(private var fissures: List<Fissure>) :
 
     override fun getItemCount() = fissures.size
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateData(newFissures: List<Fissure>) {
+        // Stop all existing timers before updating
+        CountdownTimer.stopAllCountdowns()
         fissures = newFissures
         notifyDataSetChanged()
+    }
+    
+    /**
+     * Clean up timers when adapter is destroyed
+     */
+    fun cleanup() {
+        CountdownTimer.stopAllCountdowns()
     }
 }

@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.dashboard
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -59,6 +60,7 @@ class InvasionAdapter(private var invasions: List<Invasion>) :
 
     override fun getItemCount() = invasions.size
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateData(newInvasions: List<Invasion>) {
         invasions = newInvasions
         notifyDataSetChanged()

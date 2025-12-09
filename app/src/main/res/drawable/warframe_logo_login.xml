@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="100dp"
+    android:viewportWidth="200"
+    android:viewportHeight="100">
+    
+    <!-- Background glow -->
+    <path
+        android:pathData="M0,0 L200,0 L200,100 L0,100 Z"
+        android:fillColor="#1100D4FF" />
+    
+    <!-- Main logo shape - stylized "W" -->
+    <path
+        android:pathData="M20,20 L35,80 L50,50 L65,80 L80,20 L70,20 L60,60 L50,35 L40,60 L30,20 Z"
+        android:fillColor="#FF00D4FF"
+        android:strokeWidth="1"
+        android:strokeColor="#FFFFFF" />
+    
+    <!-- "ARFRAME" text -->
+    <path
+        android:pathData="M90,35 L95,35 L100,50 L105,35 L110,35 L102,60 L98,60 Z"
+        android:fillColor="#FF00D4FF" />
+    <path
+        android:pathData="M90,60 L110,60 L110,65 L90,65 Z"
+        android:fillColor="#FF00D4FF" />
+    
+    <!-- R -->
+    <path
+        android:pathData="M115,35 L115,65 L120,65 L120,50 L125,50 L130,65 L135,65 L128,48 L130,45 Q132,35 125,35 Z M120,40 L125,40 Q127,40 127,42.5 Q127,45 125,45 L120,45 Z"
+        android:fillColor="#FF00D4FF" />
+    
+    <!-- Stylized frame elements -->
+    <path
+        android:pathData="M140,30 L180,30 L180,35 L145,35 L145,65 L140,65 Z"
+        android:fillColor="#FF00D4FF" />
+    <path
+        android:pathData="M140,47.5 L170,47.5 L170,52.5 L140,52.5 Z"
+        android:fillColor="#FF00D4FF" />
+    
+    <!-- Decorative elements -->
+    <path android:pathData="M13,50 A2,2 0 1,1 17,50 A2,2 0 1,1 13,50" android:fillColor="#FF00D4FF" />
+    <path android:pathData="M183,50 A2,2 0 1,1 187,50 A2,2 0 1,1 183,50" android:fillColor="#FF00D4FF" />
+    
+    <!-- Energy lines -->
+    <path
+        android:pathData="M10,25 L190,25"
+        android:strokeWidth="1"
+        android:strokeColor="#6600D4FF" />
+    <path
+        android:pathData="M10,75 L190,75"
+        android:strokeWidth="1"
+        android:strokeColor="#6600D4FF" />
+</vector>

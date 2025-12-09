@@ -36,6 +36,27 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    
+    lint {
+        warningsAsErrors = true
+        abortOnError = true
+        disable += setOf(
+            "UnusedResources",
+            "SetTextI18n", 
+            "Overdraw",
+            "UseCompoundDrawables",
+            "SmallSp",
+            "ContentDescription",
+            "DisableBaselineAlignment",
+            "TypographyEllipsis",
+            "ButtonStyle",
+            "GradleDependency",
+            "VectorPath",
+            "AndroidGradlePluginVersion",
+            "InconsistentLayout",
+            "HardcodedText"
+        )
+    }
 
     packaging {
         resources {

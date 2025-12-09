@@ -92,10 +92,26 @@ class DashboardFragment : Fragment() {
             binding.cambionStatusTextView.text = cycle.active
             binding.cambionTimeLeftTextView.text = cycle.timeLeft
         }
+        
+        // Observe loading state
+        viewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
+            // You can add a loading indicator here if needed
+            // For now, we'll just log it
+        }
+        
+        // Observe error state
+        viewModel.error.observe(viewLifecycleOwner) { error ->
+            error?.let {
+                // You can show a toast or snackbar here
+                // For now, we'll just log it
+            }
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
+        // Clean up countdown timers
+        (binding.fissuresRecyclerView.adapter as? FissureAdapter)?.cleanup()
         _binding = null
     }
 }

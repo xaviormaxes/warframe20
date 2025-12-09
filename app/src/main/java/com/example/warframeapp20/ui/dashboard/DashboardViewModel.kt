@@ -3,9 +3,13 @@ package com.example.warframeapp20.ui.dashboard
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.warframeapp20.data.*
+import kotlinx.coroutines.launch
 
 class DashboardViewModel : ViewModel() {
+    
+    private val worldStateService = WorldStateService()
 
     // Sample data for demonstration
     private val _invasions = MutableLiveData<List<Invasion>>().apply {
@@ -179,8 +183,69 @@ class DashboardViewModel : ViewModel() {
     }
     val cambionCycle: LiveData<CambionCycle> = _cambionCycle
 
-    // Methods to refresh data from API would go here
+    // Loading state
+    private val _isLoading = MutableLiveData<Boolean>().apply { value = false }
+    val isLoading: LiveData<Boolean> = _isLoading
+    
+    // Error state
+    private val _error = MutableLiveData<String?>().apply { value = null }
+    val error: LiveData<String?> = _error
+
+    init {
+        // Load real data on startup
+        refreshData()
+    }
+
     fun refreshData() {
-        // In a real app, this would fetch fresh data from a repository
+        viewModelScope.launch {
+            _isLoading.value = true
+            _error.value = null
+            
+            try {
+                // Load all data concurrently
+                val invasionsDeferred = viewModelScope.launch { 
+                    val data = worldStateService.getInvasions()
+                    _invasions.postValue(data)
+                }
+                
+                val eventsDeferred = viewModelScope.launch {
+                    val data = worldStateService.getEvents()
+                    _events.postValue(data)
+                }
+                
+                val fissuresDeferred = viewModelScope.launch {
+                    val data = worldStateService.getFissures()
+                    _fissures.postValue(data)
+                }
+                
+                val sortieDeferred = viewModelScope.launch {
+                    val data = worldStateService.getSortie()
+                    data?.let { _sortie.postValue(it) }
+                }
+                
+                val cetusDeferred = viewModelScope.launch {
+                    val data = worldStateService.getCetusCycle()
+                    data?.let { _cetusCycle.postValue(it) }
+                }
+                
+                val cambionDeferred = viewModelScope.launch {
+                    val data = worldStateService.getCambionCycle()
+                    data?.let { _cambionCycle.postValue(it) }
+                }
+                
+                // Wait for all to complete
+                invasionsDeferred.join()
+                eventsDeferred.join()
+                fissuresDeferred.join()
+                sortieDeferred.join()
+                cetusDeferred.join()
+                cambionDeferred.join()
+                
+            } catch (e: Exception) {
+                _error.postValue("Failed to load data: ${e.message}")
+            } finally {
+                _isLoading.postValue(false)
+            }
+        }
     }
 }

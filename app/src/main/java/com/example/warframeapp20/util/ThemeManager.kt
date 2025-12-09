@@ -1,5 +1,6 @@
 package com.example.warframeapp20.util
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.SharedPreferences
@@ -23,13 +24,14 @@ class ThemeManager(private val context: Context) {
         const val THEME_NOVA_PRIME = "nova_prime"
         const val THEME_FROST_PRIME = "frost_prime"
 
+        @SuppressLint("StaticFieldLeak")
+        @Volatile
         private var instance: ThemeManager? = null
 
         fun getInstance(context: Context): ThemeManager {
-            if (instance == null) {
-                instance = ThemeManager(context.applicationContext)
+            return instance ?: synchronized(this) {
+                instance ?: ThemeManager(context.applicationContext).also { instance = it }
             }
-            return instance!!
         }
     }
 

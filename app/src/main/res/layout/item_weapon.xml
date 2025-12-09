@@ -23,7 +23,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_weapon_24dp"
-            android:contentDescription="Weapon"
+            android:contentDescription="@string/weapon_desc"
             app:tint="?attr/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +32,7 @@
             android:id="@+id/chip_prime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRIME"
+            android:text="@string/prime_label"
             android:textSize="10sp"
             android:visibility="gone"
             app:chipBackgroundColor="?attr/colorSecondary"
@@ -98,7 +98,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DMG"
+                    android:text="@string/damage_label"
                     android:textSize="10sp"
                     android:textColor="?attr/android:textColorSecondary" />
 
@@ -124,7 +124,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CRIT"
+                    android:text="@string/crit_label"
                     android:textSize="10sp"
                     android:textColor="?attr/android:textColorSecondary" />
 

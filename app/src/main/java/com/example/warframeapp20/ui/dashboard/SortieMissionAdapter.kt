@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.dashboard
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -48,6 +49,7 @@ class SortieMissionAdapter(private var missions: List<SortieMission>) :
 
     override fun getItemCount() = missions.size
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateData(newMissions: List<SortieMission>) {
         missions = newMissions
         notifyDataSetChanged()

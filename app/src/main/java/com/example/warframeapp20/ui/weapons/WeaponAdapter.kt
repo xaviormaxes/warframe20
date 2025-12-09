@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.weapons
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +13,7 @@ class WeaponAdapter(
 
     private var weapons = listOf<Weapon>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateWeapons(newWeapons: List<Weapon>) {
         weapons = newWeapons
         notifyDataSetChanged()

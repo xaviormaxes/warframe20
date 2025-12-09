@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.market
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ class PriceAlertAdapter(
 
     private var alerts = listOf<PriceAlert>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateAlerts(newAlerts: List<PriceAlert>) {
         alerts = newAlerts
         notifyDataSetChanged()

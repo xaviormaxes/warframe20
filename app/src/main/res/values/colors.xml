@@ -28,6 +28,8 @@
     <color name="rhino_accent_bright">#DEB887</color>
     <color name="rhino_background">#1A1611</color>
     <color name="rhino_surface">#2D2419</color>
+    <color name="rhino_text">#F5F5DC</color>
+    <color name="rhino_text_secondary">#D3F5F5DC</color>
 
     <!-- Excalibur Umbra Theme Colors -->
     <color name="umbra_primary">#8A2BE2</color>
@@ -36,6 +38,8 @@
     <color name="umbra_accent_bright">#FFA07A</color>
     <color name="umbra_background">#0F0A1A</color>
     <color name="umbra_surface">#1A0F2E</color>
+    <color name="umbra_text">#E6E6FA</color>
+    <color name="umbra_text_secondary">#B3E6E6FA</color>
 
     <!-- Wisp Theme Colors -->
     <color name="wisp_primary">#FF1493</color>
@@ -44,6 +48,8 @@
     <color name="wisp_accent_bright">#FFC0CB</color>
     <color name="wisp_background">#1A0F1A</color>
     <color name="wisp_surface">#2E1A2E</color>
+    <color name="wisp_text">#FFE4E1</color>
+    <color name="wisp_text_secondary">#B3FFE4E1</color>
 
     <!-- Mesa Prime Theme Colors -->
     <color name="mesa_primary">#FF4500</color>
@@ -52,6 +58,8 @@
     <color name="mesa_accent_bright">#FFFF00</color>
     <color name="mesa_background">#1A0F0A</color>
     <color name="mesa_surface">#2E1A0F</color>
+    <color name="mesa_text">#FFF8DC</color>
+    <color name="mesa_text_secondary">#B3FFF8DC</color>
 
     <!-- Saryn Prime Theme Colors -->
     <color name="saryn_primary">#32CD32</color>
@@ -60,6 +68,8 @@
     <color name="saryn_accent_bright">#90EE90</color>
     <color name="saryn_background">#0A1A0A</color>
     <color name="saryn_surface">#0F2E0F</color>
+    <color name="saryn_text">#F0FFF0</color>
+    <color name="saryn_text_secondary">#B3F0FFF0</color>
 
     <!-- Nova Prime Theme Colors -->
     <color name="nova_primary">#4169E1</color>
@@ -68,6 +78,8 @@
     <color name="nova_accent_bright">#B0E0E6</color>
     <color name="nova_background">#0A0F1A</color>
     <color name="nova_surface">#0F1A2E</color>
+    <color name="nova_text">#F0F8FF</color>
+    <color name="nova_text_secondary">#B3F0F8FF</color>
 
     <!-- Frost Prime Theme Colors -->
     <color name="frost_primary">#00BFFF</color>
@@ -76,6 +88,8 @@
     <color name="frost_accent_bright">#E0F6FF</color>
     <color name="frost_background">#0A1A1A</color>
     <color name="frost_surface">#0F2E2E</color>
+    <color name="frost_text">#F0FFFF</color>
+    <color name="frost_text_secondary">#B3F0FFFF</color>
 
     <!-- Fissure Era Colors -->
     <color name="lith">#3498DB</color>

@@ -4,73 +4,73 @@
         <item
             android:id="@+id/nav_dashboard"
             android:icon="@drawable/ic_dashboard_24dp"
-            android:title="Dashboard" />
+            android:title="@string/nav_dashboard" />
 
-        <item android:title="World State">
+        <item android:title="@string/menu_world_state">
             <menu>
                 <item
                     android:id="@+id/nav_alerts"
                     android:icon="@drawable/ic_alert_24dp"
-                    android:title="Alerts" />
+                    android:title="@string/title_alerts" />
                 <item
                     android:id="@+id/nav_invasions"
                     android:icon="@drawable/ic_invasion_24dp"
-                    android:title="Invasions" />
+                    android:title="@string/title_invasions" />
                 <item
                     android:id="@+id/nav_fissures"
                     android:icon="@drawable/ic_fissure_24dp"
-                    android:title="Void Fissures" />
+                    android:title="@string/void_fissures" />
                 <item
                     android:id="@+id/nav_sortie"
                     android:icon="@drawable/ic_sortie_24dp"
-                    android:title="Sortie" />
+                    android:title="@string/title_sortie" />
                 <item
                     android:id="@+id/nav_events"
                     android:icon="@drawable/ic_event_24dp"
-                    android:title="Events" />
+                    android:title="@string/title_events" />
                 <item
                     android:id="@+id/nav_nightwave"
                     android:icon="@drawable/ic_nightwave_24dp"
-                    android:title="Nightwave" />
+                    android:title="@string/title_nightwave" />
             </menu>
         </item>
 
-        <item android:title="Resources">
+        <item android:title="@string/menu_resources_section">
             <menu>
                 <item
                     android:id="@+id/nav_relics"
                     android:icon="@drawable/ic_relics_24dp"
-                    android:title="Relics" />
+                    android:title="@string/title_relics" />
                 <item
                     android:id="@+id/nav_warframes"
                     android:icon="@drawable/ic_warframe_24dp"
-                    android:title="Warframes" />
+                    android:title="@string/title_warframes" />
                 <item
                     android:id="@+id/nav_weapons"
                     android:icon="@drawable/ic_weapon_24dp"
-                    android:title="Weapons" />
+                    android:title="@string/title_weapons" />
                 <item
                     android:id="@+id/nav_companions"
                     android:icon="@drawable/ic_companion_24dp"
-                    android:title="Companions" />
+                    android:title="@string/title_companions" />
             </menu>
         </item>
     </group>
 
-    <item android:title="App">
+    <item android:title="@string/menu_app_section">
         <menu>
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_settings_24dp"
-                android:title="Settings" />
+                android:title="@string/title_settings" />
             <item
                 android:id="@+id/nav_themes"
                 android:icon="@drawable/ic_theme_24dp"
-                android:title="Themes" />
+                android:title="@string/title_themes" />
             <item
                 android:id="@+id/nav_about"
                 android:icon="@drawable/ic_info_24dp"
-                android:title="About" />
+                android:title="@string/title_about" />
         </menu>
     </item>
 </menu>

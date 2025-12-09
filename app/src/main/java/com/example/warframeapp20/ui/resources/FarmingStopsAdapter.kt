@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.resources
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ class FarmingStopsAdapter(
 
     private var stops = listOf<FarmingStop>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateStops(newStops: List<FarmingStop>) {
         stops = newStops
         notifyDataSetChanged()

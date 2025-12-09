@@ -29,7 +29,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginEnd="8dp"
-                android:contentDescription="Event icon"
+                android:contentDescription="@string/event_icon_desc"
                 android:src="@drawable/ic_event_24dp"
                 app:tint="?attr/colorPrimary" />
 

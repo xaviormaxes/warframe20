@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.dashboard
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
@@ -41,6 +42,7 @@ class EventAdapter(private var events: List<Event>) :
 
     override fun getItemCount() = events.size
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateData(newEvents: List<Event>) {
         events = newEvents
         notifyDataSetChanged()

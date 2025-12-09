@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.market
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ class MarketItemAdapter(
 
     private var items = listOf<MarketItem>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateItems(newItems: List<MarketItem>) {
         items = newItems
         notifyDataSetChanged()

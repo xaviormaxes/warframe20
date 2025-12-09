@@ -188,7 +188,7 @@ class ResourcesFragment : Fragment() {
     private fun updateFarmingStats(route: com.example.warframeapp20.data.FarmingRoute) {
         binding.farmingTimeText.text = "${route.totalEstimatedTime} minutes"
         binding.farmingStopsText.text = "${route.stops.size} locations"
-        binding.farmingEfficiencyText.text = "Efficiency: ${String.format("%.1f", route.efficiency)}/5"
+        binding.farmingEfficiencyText.text = "Efficiency: ${String.format(java.util.Locale.getDefault(), "%.1f", route.efficiency)}/5"
     }
 
     private fun updateAllocationRecommendations(allocation: com.example.warframeapp20.data.ResourceAllocation) {

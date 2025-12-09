@@ -19,13 +19,13 @@
             android:layout_weight="1"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Item Name" />
+            android:text="@string/dialog_item_name" />
 
         <Button
             android:id="@+id/closeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Close"
+            android:text="@string/dialog_close"
             style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sell Orders"
+        android:text="@string/dialog_sell_orders"
         android:textStyle="bold"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp" />
@@ -47,7 +47,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buy Orders"
+        android:text="@string/dialog_buy_orders"
         android:textStyle="bold"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp" />

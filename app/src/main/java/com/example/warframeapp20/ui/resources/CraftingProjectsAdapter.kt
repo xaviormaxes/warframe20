@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.resources
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,6 +17,7 @@ class CraftingProjectsAdapter(
 
     private var projects = listOf<CraftingProject>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateProjects(newProjects: List<CraftingProject>) {
         projects = newProjects
         notifyDataSetChanged()

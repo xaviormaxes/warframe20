@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Tap the theme button in the toolbar to change themes."
+        android:text="@string/theme_change_instruction"
         android:textSize="14sp"
         android:textColor="?attr/android:textColorSecondary"
         app:layout_constraintEnd_toEndOf="parent"

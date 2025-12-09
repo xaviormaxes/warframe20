@@ -27,6 +27,10 @@
         <item name="colorSecondaryVariant">@color/rhino_accent_bright</item>
         <item name="colorBackground">@color/rhino_background</item>
         <item name="colorSurface">@color/rhino_surface</item>
+        <item name="colorOnSurface">@color/rhino_text</item>
+        <item name="colorOnBackground">@color/rhino_text</item>
+        <item name="android:textColorPrimary">@color/rhino_text</item>
+        <item name="android:textColorSecondary">@color/rhino_text_secondary</item>
     </style>
 
     <!-- Excalibur Umbra Theme -->
@@ -37,6 +41,10 @@
         <item name="colorSecondaryVariant">@color/umbra_accent_bright</item>
         <item name="colorBackground">@color/umbra_background</item>
         <item name="colorSurface">@color/umbra_surface</item>
+        <item name="colorOnSurface">@color/umbra_text</item>
+        <item name="colorOnBackground">@color/umbra_text</item>
+        <item name="android:textColorPrimary">@color/umbra_text</item>
+        <item name="android:textColorSecondary">@color/umbra_text_secondary</item>
     </style>
 
     <!-- Wisp Theme -->
@@ -47,6 +55,10 @@
         <item name="colorSecondaryVariant">@color/wisp_accent_bright</item>
         <item name="colorBackground">@color/wisp_background</item>
         <item name="colorSurface">@color/wisp_surface</item>
+        <item name="colorOnSurface">@color/wisp_text</item>
+        <item name="colorOnBackground">@color/wisp_text</item>
+        <item name="android:textColorPrimary">@color/wisp_text</item>
+        <item name="android:textColorSecondary">@color/wisp_text_secondary</item>
     </style>
 
     <!-- Mesa Prime Theme -->
@@ -57,6 +69,10 @@
         <item name="colorSecondaryVariant">@color/mesa_accent_bright</item>
         <item name="colorBackground">@color/mesa_background</item>
         <item name="colorSurface">@color/mesa_surface</item>
+        <item name="colorOnSurface">@color/mesa_text</item>
+        <item name="colorOnBackground">@color/mesa_text</item>
+        <item name="android:textColorPrimary">@color/mesa_text</item>
+        <item name="android:textColorSecondary">@color/mesa_text_secondary</item>
     </style>
 
     <!-- Saryn Prime Theme -->
@@ -67,6 +83,10 @@
         <item name="colorSecondaryVariant">@color/saryn_accent_bright</item>
         <item name="colorBackground">@color/saryn_background</item>
         <item name="colorSurface">@color/saryn_surface</item>
+        <item name="colorOnSurface">@color/saryn_text</item>
+        <item name="colorOnBackground">@color/saryn_text</item>
+        <item name="android:textColorPrimary">@color/saryn_text</item>
+        <item name="android:textColorSecondary">@color/saryn_text_secondary</item>
     </style>
 
     <!-- Nova Prime Theme -->
@@ -77,6 +97,10 @@
         <item name="colorSecondaryVariant">@color/nova_accent_bright</item>
         <item name="colorBackground">@color/nova_background</item>
         <item name="colorSurface">@color/nova_surface</item>
+        <item name="colorOnSurface">@color/nova_text</item>
+        <item name="colorOnBackground">@color/nova_text</item>
+        <item name="android:textColorPrimary">@color/nova_text</item>
+        <item name="android:textColorSecondary">@color/nova_text_secondary</item>
     </style>
 
     <!-- Frost Prime Theme -->
@@ -87,6 +111,10 @@
         <item name="colorSecondaryVariant">@color/frost_accent_bright</item>
         <item name="colorBackground">@color/frost_background</item>
         <item name="colorSurface">@color/frost_surface</item>
+        <item name="colorOnSurface">@color/frost_text</item>
+        <item name="colorOnBackground">@color/frost_text</item>
+        <item name="android:textColorPrimary">@color/frost_text</item>
+        <item name="android:textColorSecondary">@color/frost_text_secondary</item>
     </style>
 
     <!-- Styles for widgets -->

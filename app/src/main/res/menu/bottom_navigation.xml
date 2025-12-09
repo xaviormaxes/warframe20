@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/nav_dashboard"
         android:icon="@drawable/ic_dashboard_24dp"
-        android:title="Dashboard" />
+        android:title="@string/nav_dashboard" />
 
     <item
-        android:id="@+id/navigation_fissures"
+        android:id="@+id/nav_market"
         android:icon="@drawable/ic_relics_24dp"
-        android:title="Fissures" />
+        android:title="@string/title_market" />
 
     <item
-        android:id="@+id/navigation_missions"
+        android:id="@+id/nav_arsenal"
         android:icon="@drawable/ic_missions_24dp"
-        android:title="Missions" />
+        android:title="@string/menu_arsenal" />
 
     <item
-        android:id="@+id/navigation_progression"
+        android:id="@+id/nav_settings"
         android:icon="@drawable/ic_progression_24dp"
-        android:title="Progress" />
+        android:title="@string/menu_settings" />
 </menu>

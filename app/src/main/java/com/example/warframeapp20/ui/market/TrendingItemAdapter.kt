@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.market
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ class TrendingItemAdapter(
 
     private var items = listOf<TrendingItem>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateItems(newItems: List<TrendingItem>) {
         items = newItems
         notifyDataSetChanged()
@@ -39,7 +41,7 @@ class TrendingItemAdapter(
         fun bind(item: TrendingItem) {
             nameText.text = item.itemName
             priceText.text = "${item.currentPrice}p"
-            changeText.text = "${String.format("%.1f", item.priceChange)}%"
+            changeText.text = "${String.format(java.util.Locale.getDefault(), "%.1f", item.priceChange)}%"
             
             changeText.setTextColor(
                 if (item.isRising) android.graphics.Color.GREEN 

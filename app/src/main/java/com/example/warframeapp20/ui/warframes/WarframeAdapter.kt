@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.warframes
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +13,7 @@ class WarframeAdapter(
 
     private var warframes = listOf<Warframe>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateWarframes(newWarframes: List<Warframe>) {
         warframes = newWarframes
         notifyDataSetChanged()

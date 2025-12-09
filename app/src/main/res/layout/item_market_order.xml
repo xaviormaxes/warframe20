@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="100p"
+        android:text="@string/price_100p"
         android:textStyle="bold"
         android:textColor="?attr/colorPrimary" />
 
@@ -20,7 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="x1"
+        android:text="@string/quantity_x1"
         android:gravity="center" />
 
     <TextView
@@ -28,7 +28,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:text="Username"
+        android:text="@string/username_placeholder"
         android:gravity="center" />
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="online"
+        android:text="@string/status_online"
         android:gravity="end"
         android:textSize="12sp" />
 

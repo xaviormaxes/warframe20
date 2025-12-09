@@ -1,5 +1,6 @@
 package com.example.warframeapp20.ui.resources
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ class ResourcesAdapter(
 
     private var resources = listOf<ResourceInventoryItem>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateResources(newResources: List<ResourceInventoryItem>) {
         resources = newResources
         notifyDataSetChanged()
